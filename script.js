@@ -27,12 +27,13 @@ const valueObj = {
     4 : "Bad",
     5 : "Extremely Bad",
 };
+const result = [];
 
-const arr = [lb1, lb2, lb3, lb4, lb5, lb6, lb7, lb8, lb9, lb10, lb11, lb12, lb13, lb14, lb15, lb16, lb17, lb18, lb19, lb20];
+// const arr = [lb1, lb2, lb3, lb4, lb5, lb6, lb7, lb8, lb9, lb10, lb11, lb12, lb13, lb14, lb15, lb16, lb17, lb18, lb19, lb20];
 const printInfo = (event) => {
     // console.log(event);
-    console.log(event.target.dataset.value);
-    console.log(event.target.parentNode)
+    // console.log(event.target.dataset.value);
+    // console.log(event.target.parentNode)
     if(event.target.dataset.value % 5 === 1){
         // event.target.parentNode.classList.add("rate-green");
 
@@ -42,6 +43,8 @@ const printInfo = (event) => {
         ", " +
         "#1F9700" +
         ")";
+        // console.log(valueObj[1]);
+        result.push(valueObj[1]);
         
     }
     if(event.target.dataset.value % 5 === 2){
@@ -52,7 +55,8 @@ const printInfo = (event) => {
         ", " +
         "#A2FF55" +
         ")";
-        
+        // console.log(valueObj[2]);
+        result.push(valueObj[2]);
     }
     if(event.target.dataset.value % 5 === 3){
         event.target.parentNode.classList.add("rate-orange");
@@ -62,7 +66,8 @@ const printInfo = (event) => {
         ", " +
         "#FF8C00" +
         ")";
-        
+        // console.log(valueObj[3]);
+        result.push(valueObj[3]);
     }
     if(event.target.dataset.value % 5 === 4){
         // event.target.parentNode.classList.add("rate-yellow");
@@ -72,7 +77,8 @@ const printInfo = (event) => {
         ", " +
         "#FFFF00" +
         ")";
-        
+        // console.log(valueObj[4]);
+        result.push(valueObj[4]);
     }
     if(event.target.dataset.value % 5 === 0){
         // event.target.parentNode.classList.remove("rating");
@@ -83,15 +89,19 @@ const printInfo = (event) => {
         ", " +
         "#fffac1" +
         ")";
-        }
+        // console.log(valueObj[5]);
+        result.push(valueObj[5]);
+    }
 }
 const printValConsole = () => {
-
+    for(let i = 0; i < result.length; i++){
+        console.log(result[i]);
+    }
 } 
 
 // const 
 
-btn.addEventListener('click', printInfo);
+btn.addEventListener('click', printValConsole);
 lb1.addEventListener('click', printInfo);
 lb2.addEventListener('click', printInfo);
 lb3.addEventListener('click', printInfo);
