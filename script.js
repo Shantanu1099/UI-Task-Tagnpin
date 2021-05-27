@@ -27,17 +27,67 @@ const valueObj = {
     4 : "Bad",
     5 : "Extremely Bad",
 };
+
 const arr = [lb1, lb2, lb3, lb4, lb5, lb6, lb7, lb8, lb9, lb10, lb11, lb12, lb13, lb14, lb15, lb16, lb17, lb18, lb19, lb20];
-const printInfo = () => {
-    console.log(event);
-    // for(let i = 0; i < arr.length; i++){
-        console.log(event.target.dataset.value);
-        // const result = arr.filter()
-        // if()
-        // console.log(event)
-    // }
-    // if()
+const printInfo = (event) => {
+    // console.log(event);
+    console.log(event.target.dataset.value);
+    console.log(event.target.parentNode)
+    if(event.target.dataset.value % 5 === 1){
+        // event.target.parentNode.classList.add("rate-green");
+
+        event.target.parentNode.style.background = 
+        "linear-gradient(to right,"+ 
+        "#1F9700" + 
+        ", " +
+        "#1F9700" +
+        ")";
+        
+    }
+    if(event.target.dataset.value % 5 === 2){
+        // event.target.parentNode.classList.add("rate-l-green");
+        event.target.parentNode.style.background = 
+        "linear-gradient(to right,"+ 
+        "#A2FF55" + 
+        ", " +
+        "#A2FF55" +
+        ")";
+        
+    }
+    if(event.target.dataset.value % 5 === 3){
+        event.target.parentNode.classList.add("rate-orange");
+        event.target.parentNode.style.background = 
+        "linear-gradient(to right,"+ 
+        "#FF8C00" + 
+        ", " +
+        "#FF8C00" +
+        ")";
+        
+    }
+    if(event.target.dataset.value % 5 === 4){
+        // event.target.parentNode.classList.add("rate-yellow");
+        event.target.parentNode.style.background = 
+        "linear-gradient(to right,"+ 
+        "#FFFF00" + 
+        ", " +
+        "#FFFF00" +
+        ")";
+        
+    }
+    if(event.target.dataset.value % 5 === 0){
+        // event.target.parentNode.classList.remove("rating");
+        // event.target.parentNode.classList.add("rate-l-yellow");
+        event.target.parentNode.style.background = 
+        "linear-gradient(to right,"+ 
+        "#fffac1" + 
+        ", " +
+        "#fffac1" +
+        ")";
+        }
 }
+const printValConsole = () => {
+
+} 
 
 // const 
 

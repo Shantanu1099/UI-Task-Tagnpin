@@ -72,7 +72,7 @@ div p{
     background: linear-gradient(to right,#FFF581 ,#FFFF00, #FF8C00, #A2FF55, #1F9700 );
     /* background: linear-gradient(to right, #A2FF55, #1F9700 ); */
 }
-.rate-green{
+/* .rate-green{
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -91,14 +91,32 @@ div p{
     background: linear-gradient(to right, #A2FF55, #A2FF55 );
 }
 .rate-orange{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    border: 1px solid white;
+    box-sizing: border-box;
     background: linear-gradient(to right, #FF8C00, #FF8C00 );
 }
 .rate-yellow{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    border: 1px solid white;
+    box-sizing: border-box;
     background: linear-gradient(to right, #FFFF00, #FFFF00 );
 }
 .rate-l-yellow{
-    background: linear-gradient(to right, #FFF581, #FFF581 );
-}
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #fffac1, #fffac1 );
+} */
 .rating input{
     display: none;
 
