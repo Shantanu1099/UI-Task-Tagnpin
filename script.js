@@ -28,6 +28,7 @@ const valueObj = {
     5 : "Extremely Bad",
 };
 const result = [];
+const paraRes = ["Responsiveness", "Competency in advising right solutions", "Trustworthiness", "Customer Service and Support"]
 
 // const arr = [lb1, lb2, lb3, lb4, lb5, lb6, lb7, lb8, lb9, lb10, lb11, lb12, lb13, lb14, lb15, lb16, lb17, lb18, lb19, lb20];
 const printInfo = (event) => {
@@ -95,11 +96,9 @@ const printInfo = (event) => {
 }
 const printValConsole = () => {
     for(let i = 0; i < result.length; i++){
-        console.log(result[i]);
+        console.log(paraRes[i]+" : "+result[i]);
     }
 } 
-
-// const 
 
 btn.addEventListener('click', printValConsole);
 lb1.addEventListener('click', printInfo);
