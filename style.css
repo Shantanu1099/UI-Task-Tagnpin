@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.root{
+    height: 100vh;
+}
+.box{
+    width: 600px;
+    margin-right: 0;
+}
+h2{
+    color: red;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+h6{
+    background: rgb(94, 54, 94);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: whitesmoke;
+    /* font-family: fra; */
+    font-weight: 200;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.heading{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.mainheader{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1.2rem;
+}
+div p{
+    padding: 0;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.innertext{
+    display: flex;
+    justify-content: space-evenly;
+}
+.innertext p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5rem;
+    margin-bottom: 0;
+}
+.bar{
+    margin-top: 1rem;
+}
+.rating{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    background: linear-gradient(to right,#FFF581 ,#FFFF00, #FF8C00, #A2FF55, #1F9700 );
+}
+.rating input{
+    display: none;
+
+}
+.rating label{
+    content-visibility: hidden;
+    display: block;
+    cursor: pointer;
+    width: 10rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: 300ms;
+    background: rgb(187, 183, 183);
+    color: #000;
+    font-size: 1rem;
+    border-right: 5px solid whitesmoke;
+
+}
+.rating input[type = "radio"]:hover ~ label,
+.rating input[type = "radio"]:checked ~ label{
+    background: transparent;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#btn1{
+    background: none;
+    padding: 0.3rem 3rem;
+    background-color: #3D8700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0.6rem;
+}
