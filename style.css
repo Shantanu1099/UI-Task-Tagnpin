@@ -159,3 +159,16 @@ div p{
     letter-spacing: 1px;
     margin: 0.6rem;
 }
+
+@media screen and (max-width: 600px){
+    .box{
+        width: 500px;
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .box{
+        width: 300px;
+        margin-left: 2rem;
+    }
+}
